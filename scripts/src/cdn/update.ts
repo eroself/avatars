@@ -32,7 +32,7 @@ import { EdgeRule, Pullzone } from '../types';
   };
 
   // Update blocked referrers
-  if (cdnOptions.blocked.referrer) {
+  if (cdnOptions.blocked.referrer.length > 0) {
     saveEdgeRule(edgeRule.createBlockReferrers(cdnOptions.blocked.referrer));
   }
 
@@ -81,6 +81,11 @@ import { EdgeRule, Pullzone } from '../types';
     let routes = cdnOptions.origin[origin];
 
     saveEdgeRule(edgeRule.createOrigin(origin, routes));
+  }
+
+  // Update cors headers
+  if (cdnOptions.cors) {
+    saveEdgeRule(edgeRule.createCorsHeader(cdnOptions.cors));
   }
 
   // Delete obsolete managed edge rules

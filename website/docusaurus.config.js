@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   title: 'DiceBear Avatars',
-  tagline: 'Avatars is an avatar placeholder library for designers and developers. ',
+  tagline: 'DiceBear is an avatar library for designers and developers.',
   url: 'https://avatars.dicebear.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -36,7 +36,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'integrations/serverless',
+          to: 'integrations/api-server',
           activeBasePath: 'integrations',
           label: 'Integrations',
           position: 'left',
@@ -72,6 +72,10 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Licenses',
+              to: '/licenses',
+            },
+            {
               label: 'Frequently Asked Questions',
               to: '/faq',
             },
@@ -101,7 +105,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/DiceBear/avatars/edit/v4/website/',
+          editUrl: 'https://github.com/DiceBear/avatars/edit/main/website/',
           routeBasePath: '/',
         },
         theme: {

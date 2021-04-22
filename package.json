@@ -1,11 +1,9 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.20.2"
-  },
   "workspaces": {
     "packages": [
+      "packages/@dicebear/*",
       "packages/*",
       "scripts",
       "website"
@@ -13,5 +11,8 @@
     "nohoist": [
       "**/html-minifier-terser"
     ]
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
   }
 }

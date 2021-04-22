@@ -1,7 +1,5 @@
-> :warning: The current stable version can be found in the [v4](https://github.com/DiceBear/avatars/tree/v4) branch.
-
-<h1 align="center"><img src="https://avatars.dicebear.com/api/male/seed.svg" width="124" /> <br />DiceBear Avatars</h1>
-<p align="center"><strong>Avatars is an avatar placeholder library for designers and developers.</strong></p>
+<h1 align="center"><img src="https://dicebear.com/api/male/seed.svg?mood=happy" width="124" /> <br />DiceBear</h1>
+<p align="center"><strong>DiceBear is an avatar library for designers and developers.</strong></p>
 
 <p align="center">
     <a href="https://github.com/dicebear/avatars/blob/master/LICENSE" target="_blank">
@@ -16,7 +14,9 @@
 </p>
 
 <p align="center">
-  <a href="https://avatars.dicebear.com/">
+  <a href="https://dicebear.com/">
     Read Documentation
   </a>
 </p>
+
+[![Testing Powered By SauceLabs](https://saucelabs.github.io/images/opensauce/powered-by-saucelabs-badge-white.png?sanitize=true 'Testing Powered By SauceLabs')](https://saucelabs.com)
