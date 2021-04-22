@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Options",
+  "definitions": {
+    "seed": {
+      "title": "Seed",
+      "type": "string"
+    },
+    "radius": {
+      "title": "Radius",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 50,
+      "default": 0
+    },
+    "width": {
+      "title": "Width",
+      "type": "integer",
+      "minimum": 1
+    },
+    "height": {
+      "title": "Height",
+      "type": "integer",
+      "minimum": 1
+    },
+    "margin": {
+      "title": "Margin",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 25,
+      "default": 0
+    },
+    "backgroundColor": {
+      "title": "Background Color",
+      "oneOf": [
+        {
+          "$ref": "https://dicebear.com/schema/v4.json#/definitions/color"
+        },
+        {
+          "type": "string",
+          "enum": ["transparent"]
+        }
+      ],
+      "default": "transparent"
+    }
+  },
+  "properties": {
+    "seed": {
+      "$ref": "#/definitions/seed"
+    },
+    "s": {
+      "$ref": "#/definitions/seed"
+    },
+    "base64": {
+      "title": "Base64",
+      "description": "@deprecated use dataUri instead",
+      "type": "boolean",
+      "default": false
+    },
+    "dataUri": {
+      "title": "Data URI",
+      "type": "boolean",
+      "default": false
+    },
+    "userAgent": {
+      "title": "User Agent",
+      "description": "@deprecated",
+      "type": "string"
+    },
+    "radius": {
+      "$ref": "#/definitions/radius"
+    },
+    "r": {
+      "$ref": "#/definitions/radius"
+    },
+    "width": {
+      "$ref": "#/definitions/width"
+    },
+    "w": {
+      "$ref": "#/definitions/width"
+    },
+    "height": {
+      "$ref": "#/definitions/height"
+    },
+    "h": {
+      "$ref": "#/definitions/height"
+    },
+    "margin": {
+      "$ref": "#/definitions/margin"
+    },
+    "m": {
+      "$ref": "#/definitions/margin"
+    },
+    "backgroundColor": {
+      "$ref": "#/definitions/backgroundColor"
+    },
+    "background": {
+      "description": "@deprecated use backgroundColor instead",
+      "$ref": "#/definitions/backgroundColor"
+    },
+    "b": {
+      "$ref": "#/definitions/backgroundColor"
+    }
+  },
+  "additionalProperties": false
+}

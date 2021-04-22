@@ -1,8 +1,9 @@
 {
   "npmClient": "yarn",
   "packages": [
+    "packages/@dicebear/*",
     "packages/*"
   ],
   "concurrency": 1,
-  "version": "4.5.2"
+  "version": "4.6.2"
 }
